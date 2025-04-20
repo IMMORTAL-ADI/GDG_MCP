@@ -1,0 +1,46 @@
+{
+    "servers": {
+        "my-mcp-server-1d6741bd": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "install",
+                "@microsoft/playwright-mcp",
+                "--client",
+                "vscode",
+                "--config",
+                "'{}'"
+            ]
+        },
+        "my-mcp-server-e2f23efd": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "install",
+                "fetch-mcp",
+                "--client",
+                "vscode",
+                "--key",
+                "8d9a5531-5f9d-42b7-a375-7c4136ffdf70"
+            ]
+        },
+        "duckgo": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "install",
+                "@nickclyde/duckduckgo-mcp-server",
+                "--client",
+                "vscode",
+                "--key",
+                "8d9a5531-5f9d-42b7-a375-7c4136ffdf70"
+            ]
+        }
+    }
+}
